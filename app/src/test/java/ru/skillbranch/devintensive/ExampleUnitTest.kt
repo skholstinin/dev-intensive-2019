@@ -3,6 +3,10 @@ package ru.skillbranch.devintensive
 import org.junit.Test
 
 import org.junit.Assert.*
+import ru.skillbranch.devintensive.extensions.TimeUnits
+import ru.skillbranch.devintensive.extensions.add
+import ru.skillbranch.devintensive.extensions.format
+import ru.skillbranch.devintensive.extensions.toUserView
 import ru.skillbranch.devintensive.models.User
 import java.util.*
 
@@ -43,11 +47,24 @@ class ExampleUnitTest {
     @Test
     fun test_copy() {
         val user = User.makeUser("John Wick")
-        val user2 = user.copy(id = "2", lastVisit = Date())
-        if (user.equals(user2)) {
-            println("equals $user \n $user2")
-        } else {
-            println("not equals $user \n $user2")
-        }
+        val user2 = user.copy(lastVisit = Date())
+        val user3 = user.copy(lastVisit = Date().add(-2, TimeUnits.SECOND))
+        val user4 = user.copy(lastName = "Cena", lastVisit = Date().add(2, TimeUnits.HOUR))
+        println(
+            """
+            ${user.lastVisit?.format()}
+            ${user2.lastVisit?.format()}
+            ${user3.lastVisit?.format()}
+            ${user4.lastVisit?.format()}
+        """.trimIndent()
+        )
+    }
+
+    @Test
+    fun test_data_mapping() {
+        val user = User.makeUser("Sergey Kh")
+        user.lastVisit?.add(-2, TimeUnits.MINUTE)
+        val userView = user.toUserView()
+        userView.printMe()
     }
 }
