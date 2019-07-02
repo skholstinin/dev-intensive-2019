@@ -7,7 +7,8 @@ import ru.skillbranch.devintensive.extensions.TimeUnits
 import ru.skillbranch.devintensive.extensions.add
 import ru.skillbranch.devintensive.extensions.format
 import ru.skillbranch.devintensive.extensions.toUserView
-import ru.skillbranch.devintensive.models.User
+import ru.skillbranch.devintensive.models.*
+import ru.skillbranch.devintensive.utils.Utils
 import java.util.*
 
 /**
@@ -66,5 +67,26 @@ class ExampleUnitTest {
         user.lastVisit?.add(-2, TimeUnits.MINUTE)
         val userView = user.toUserView()
         userView.printMe()
+    }
+
+    @Test
+    fun test_abtract_factory() {
+        val user = User.makeUser("Sergey Kh")
+        val txtMessage = BaseMessage.makeMessage(user, Chat("0"), payload = "any text message", type = "text")
+        val imgMessage = BaseMessage.makeMessage(user, Chat("0"), payload = "any image url", type = "image")
+        println(txtMessage.formatMessage())
+        println(imgMessage.formatMessage())
+    }
+
+    @Test
+    fun test_create_initials() {
+        val user = User.makeUser("vasja Pupkin")
+        println(Utils.toInitials(user.firstName, user.lastName))
+    }
+
+    @Test
+    fun test_transliteration() {
+        val user = User.makeUser("vasja Pupkin")
+        println(Utils.transliteration("Вася Пупкин", "_"))
     }
 }
