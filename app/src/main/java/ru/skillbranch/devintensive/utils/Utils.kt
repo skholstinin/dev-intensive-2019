@@ -67,18 +67,18 @@ object Utils {
         return str
     }
 
-    fun toInitials(firstName: String?, lastName: String?): String {
-        val firstInitial = when (firstName) {
+    fun toInitials(firstName: String?, lastName: String?): String? {
+        val firstInitial: String? = when (firstName) {
             null -> ""
             " " -> ""
             "" -> ""
-            else -> firstName[0].toUpperCase()
+            else -> firstName[0].toString().toUpperCase()
         }
-        val secondInitial = when (lastName) {
+        val secondInitial: String? = when (lastName) {
             null -> ""
             " " -> ""
             "" -> ""
-            else -> lastName[0].toUpperCase()
+            else -> lastName[0].toString().toUpperCase()
         }
         val initials: String = firstInitial.toString() + secondInitial.toString()
         return when (initials) {
