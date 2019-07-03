@@ -4,13 +4,13 @@ import ru.skillbranch.devintensive.extensions.humanizeDiff
 import java.util.*
 
 class ImageMessage(
-    id: String,
-    from: User?,
-    chat: Chat,
-    isIncomming: Boolean = false,
-    date: Date = Date(),
+    override val id: String,
+    override val from: User?,
+    override val chat: Chat,
+    override val isIncoming: Boolean = false,
+    override val date: Date = Date(),
     var image: String?
-) : BaseMessage(id, from, chat, isIncomming, date) {
+) : BaseMessage(id, from, chat, isIncoming, date) {
     override fun formatMessage(): String = "id:$id ${from?.firstName}" +
-            " ${if (isIncomming) "recieve" else "send"} image \"$image\" ${date.humanizeDiff()}"
+            " ${if (isIncoming) "получил" else "отправил"} изображение \"$image\" ${date.humanizeDiff()}"
 }
