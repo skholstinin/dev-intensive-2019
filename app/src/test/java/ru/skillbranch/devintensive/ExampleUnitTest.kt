@@ -64,7 +64,7 @@ class ExampleUnitTest {
     @Test
     fun test_data_mapping() {
         val user = User.makeUser("Sergey Kh")
-        user.lastVisit?.add(-2, TimeUnits.MINUTE)
+        user.lastVisit?.add(-2, TimeUnits.HOUR)
         val userView = user.toUserView()
         userView.printMe()
     }
