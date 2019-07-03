@@ -66,7 +66,8 @@ object Utils {
         }
         return str
     }
-    fun toInitials(firstName: String?, lastName: String?): String? {
+
+    fun toInitials(firstName: String?, lastName: String?): String {
         val firstInitial = when (firstName) {
             null -> ""
             " " -> ""
