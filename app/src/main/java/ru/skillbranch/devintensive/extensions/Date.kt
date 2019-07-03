@@ -25,7 +25,7 @@ fun Date.add(value: Int, units: TimeUnits = TimeUnits.SECOND): Date {
     return this
 }
 
-fun Date.humanizeDiff(date: Date): String {
+fun Date.humanizeDiff(date: Date = Date()): String {
     var currentTime = Date().time;
     var diffTime: Long = (currentTime - date.time) / 1000L
     var result: String = when (diffTime) {
