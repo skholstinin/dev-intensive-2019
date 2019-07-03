@@ -9,14 +9,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/ExampleUnitTest.kt" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30e7f006-eaef-4064-827b-d88d50585ded" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/BaseMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/BaseMessage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/ImageMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/ImageMessage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/TextMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/TextMessage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt" afterDir="false" />
-    </list>
+    <list default="true" id="30e7f006-eaef-4064-827b-d88d50585ded" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/BaseMessage.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -118,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+            <state relative-caret-position="119">
+              <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -488,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562137417464</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="hometask_2 complete">
+      <created>1562138483184</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1562138483184</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -654,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/BaseMessage.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/Chat.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -704,8 +697,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        <state relative-caret-position="119">
+          <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/BaseMessage.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
         </state>
       </provider>
     </entry>
