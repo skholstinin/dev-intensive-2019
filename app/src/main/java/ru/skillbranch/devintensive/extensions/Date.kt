@@ -22,10 +22,11 @@ fun Date.add(value: Int, units: TimeUnits = TimeUnits.SECOND): Date {
         TimeUnits.HOUR -> value * HOUR
         TimeUnits.DAY -> value * DAY
     }
+    this.time = time
     return this
 }
 
-fun Date.humanizeDiff(date: Date = Date()): String {
+fun Date.humanizeDiff(date: Date = Date()): Date {
     var currentTime = Date().time;
     var diffTime: Long = (currentTime - date.time) / 1000L
     var result: String = when (diffTime) {
@@ -40,7 +41,7 @@ fun Date.humanizeDiff(date: Date = Date()): String {
         360 * DAY -> "более года назад"
         else -> "никогда не был"
     }
-    return result
+    return this
 }
 
 enum class TimeUnits {
