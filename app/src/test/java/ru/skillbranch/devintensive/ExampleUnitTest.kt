@@ -62,6 +62,13 @@ class ExampleUnitTest {
     }
 
     @Test
+    fun test_date_format() {
+        val date = Date(System.currentTimeMillis())
+        println(date.format())
+        println(date.format("HH:mm:ss"))
+    }
+
+    @Test
     fun test_data_mapping() {
         val user = User.makeUser("Sergey Kh")
         user.lastVisit?.add(-2, TimeUnits.HOUR)
